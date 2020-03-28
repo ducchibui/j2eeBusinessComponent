@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-Mar-2020 5:36:11 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="utility.Author" optimistic-lock="version" schema="APP" table="AUTHOR">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="name" type="string">
+      <column length="50" name="NAME"/>
+    </property>
+  </class>
+</hibernate-mapping>
